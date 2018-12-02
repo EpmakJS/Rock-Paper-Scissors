@@ -6,21 +6,12 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 4</title>
+	<title>Rock Paper Scossors Game</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-	<!-- Template Basic Images Start -->
-	<meta property="og:image" content="path/to/image.jpg">
-	<link rel="icon" href="img/favicon/favicon.ico">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
-	<!-- Template Basic Images End -->
-	
-	<!-- Custom Browsers Color Start -->
-	<meta name="theme-color" content="#000">
-	<!-- Custom Browsers Color End -->
 
 	<link rel="stylesheet" href="css/main.min.css">
 
@@ -28,7 +19,33 @@
 
 <body>
 
-	
+	<header>
+		<h1>Rock Paper Scissors</h1>
+	</header>
+
+	<div class="score-board">
+		<div id="user-label" class="badge">user</div>
+		<div id="computer-label" class="badge">comp</div>
+		<span id="user-score">0</span> : <span id="computer-score">0</span>	
+	</div>
+
+	<div class="result">
+		<p>Paper covers rock. You win!</p>
+	</div>
+
+	<div class="choices">
+		<div id="r" class="choice">
+			<img src="img/rock-100px.png" alt="Rock">
+		</div>
+		<div id="p" class="choice">
+			<img src="img/paper-100px.png" alt="Rock">
+		</div>
+		<div id="s" class="choice">
+			<img src="img/scissors-100px.png" alt="Rock">
+		</div>
+	</div>
+
+	<p id="action-message">Make your move.</p>
 
 
 	<script src="js/scripts.min.js"></script>
