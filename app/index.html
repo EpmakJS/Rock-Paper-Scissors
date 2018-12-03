@@ -6,18 +6,32 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>Rock Paper Scossors Game</title>
+	<title>Some Really Nice Games</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
 
 	<link rel="stylesheet" href="css/main.min.css">
+
+	<audio id="clip1">
+		<source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3"></source>
+	</audio>
+	<audio id="clip2">
+		<source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3"></source>
+	</audio>
+	<audio id="clip3">
+		<source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3"></source>
+	</audio>
+	<audio id="clip4">
+		<source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3"></source>
+	</audio>
 
 </head>
 
 <body>
+
+	<!-- ROCK PAPER SCISSORS -->
 
 	<header>
 		<h1>Rock Paper Scissors</h1>
@@ -46,6 +60,39 @@
 	</div>
 
 	<p id="action-message">Make your move.</p>
+
+
+	<!-- SIMON -->
+
+	<div id="simon-header">
+		<h1>SIMON</h1>
+	</div>
+
+	<div id="outer-circle">
+		<div id="topleft"></div>
+		<div id="topright"></div>
+		<div id="bottomleft"></div>
+		<div id="bottomright"></div>
+		<div id="inner-circle">
+			<div id="title">SIMON!</div>
+
+			<div id="switches">
+				<input type="checkbox" class="toggle" id="on">
+				<button class="button" id="start">Start</button>
+				<input type="checkbox" class="toggle" id="strict">
+			</div>
+
+			<div class="text1">
+				<span>POWER</span><span>STRICT</span>
+			</div>
+
+			<div id="turn"></div>
+
+			<div class="text2">
+				COUNT
+			</div>
+		</div>
+		</div>
 
 
 	<script src="js/scripts.min.js"></script>
